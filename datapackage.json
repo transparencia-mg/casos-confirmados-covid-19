@@ -83,7 +83,7 @@
   },
   {"name": "Painel de Monitoramento Informe Epidemiológico Coronavírus",
   "path": "http://coronavirus.saude.mg.gov.br/painel-de-monitoramento"
-  },
+  }
   ],  
   "contributors": [
   {
