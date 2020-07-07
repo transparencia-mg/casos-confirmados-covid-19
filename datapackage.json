@@ -75,6 +75,7 @@
   "name": "casos-confirmados-por-COVID-19",
   "title": "casos confirmados por COVID-19",
   "homepage": "www.dados.mg.gov.br/dataset/casos-confirmados-por-COVID-19",
+  "update":"true",
   "commit":"",
   "sources":[
   {
