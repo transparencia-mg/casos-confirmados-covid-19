@@ -132,7 +132,7 @@
             "type": "string",
             "format": "default",
             "title": "Origem da Informação",
-            "description": "Data de upload do arquivo"
+            "description": "Fonte do dado correspondente a cada linha do arquivo"
           }
         ]
       }
