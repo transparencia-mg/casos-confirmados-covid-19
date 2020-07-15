@@ -2,7 +2,7 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "covid-confirmados",
+      "name": "casos-confirmados-covid-19",
       "path": "http://coronavirus.saude.mg.gov.br/images/csv-microdados/csv_sistemas.csv",
       "profile": "tabular-data-resource",
       "resourceType": "text/csv",
@@ -142,7 +142,7 @@
     "COVID-19",
     "coronavirus"
   ],
-  "name": "casos-confirmados-por-COVID-19",
+  "name": "casos-confirmados-covid-19",
   "title": "casos confirmados por COVID-19",
   "homepage": "http://www.transparencia.dadosabertos.mg.gov.br/dataset/casos-confirmados-coronavirus",
   "update":"true",
