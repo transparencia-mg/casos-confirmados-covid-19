@@ -135,7 +135,7 @@
             "description": "Fonte do dado correspondente a cada linha do arquivo"
           }
         ],
-        "missingValues":"[NA]",
+        "missingValues":["NA"]
       }
     }
   ],
