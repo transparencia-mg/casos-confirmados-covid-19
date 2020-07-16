@@ -2,11 +2,23 @@
   "profile": "tabular-data-package",
   "resources": [
     {
+      "profile": "tabular-data-resource",
       "name": "casos-confirmados-covid-19",
       "path": "http://coronavirus.saude.mg.gov.br/images/csv-microdados/csv_sistemas.csv",
-      "profile": "tabular-data-resource",
+      "title": "Casos confirmados por COVID-19",
+      "description": "Contém dados sobre os casos confirmados de COVID-19 em Minas Gerais. O total de casos confirmados é a soma dos casos confirmados que não evoluíram para óbito e dos óbitos confirmados por COVID-19.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
       "schema": {
         "fields": [
+           {
+            "name": "",
+            "type": "integer",
+            "format": "default",
+            "title": "",
+            "description": "contador"
+          },
           {
             "name": "URS",
             "type": "string",
@@ -37,7 +49,7 @@
           },
           {
             "name": "DATA_NOTIFICACAO",
-            "type": "string",
+            "type": "date",
             "format": "default",
             "title": "Data de Notificação",
             "description": "Data de notificação do caso"
@@ -121,7 +133,7 @@
           },
           {
             "name": "DATA_ATUALIZACAO",
-            "type": "string",
+            "type": "date",
             "format": "default",
             "title": "Data de Atualização",
             "description": "Data de upload do arquivo"
@@ -135,6 +147,9 @@
           }
         ],
         "missingValues":["NA"]
+     },
+      "dialect": {
+      "delimiter": ","
       }
     }
   ],
@@ -144,7 +159,7 @@
   ],
   "name": "casos-confirmados-covid-19",
   "title": "Casos confirmados por COVID-19",
-  "description": "Contém dados sobre os casos confirmados de COVID-19 em Minas Gerais. O total de casos confirmados é a soma dos casos confirmados que não evoluíram para óbito e dos óbitos confirmados por COVID-19.",
+  "description": "Contém dados sobre os casos confirmados de COVID-19 em Minas Gerais.",
   "private": "false",
   "state": "active"
 }
