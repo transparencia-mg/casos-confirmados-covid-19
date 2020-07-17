@@ -2,12 +2,23 @@
   "profile": "tabular-data-package",
   "resources": [
     {
+      "profile": "tabular-data-resource",
       "name": "casos-confirmados-covid-19",
       "path": "http://coronavirus.saude.mg.gov.br/images/csv-microdados/csv_sistemas.csv",
-      "profile": "tabular-data-resource",
-      "resourceType": "text/csv",
+      "title": "Casos confirmados por COVID-19",
+      "description": "Contém dados sobre os casos confirmados de COVID-19 em Minas Gerais. O total de casos confirmados é a soma dos casos confirmados que não evoluíram para óbito e dos óbitos confirmados por COVID-19.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
       "schema": {
         "fields": [
+           {
+            "name": "",
+            "type": "integer",
+            "format": "default",
+            "title": "",
+            "description": "contador"
+          },
           {
             "name": "URS",
             "type": "string",
@@ -38,7 +49,7 @@
           },
           {
             "name": "DATA_NOTIFICACAO",
-            "type": "string",
+            "type": "date",
             "format": "default",
             "title": "Data de Notificação",
             "description": "Data de notificação do caso"
@@ -66,7 +77,7 @@
           },
           {
             "name": "FAIXA_ETARIA",
-            "type": "integer",
+            "type": "string",
             "format": "default",
             "title": "Faixa Etária",
             "description": "Faixa Etária do paciente."
@@ -122,7 +133,7 @@
           },
           {
             "name": "DATA_ATUALIZACAO",
-            "type": "string",
+            "type": "date",
             "format": "default",
             "title": "Data de Atualização",
             "description": "Data de upload do arquivo"
@@ -134,7 +145,14 @@
             "title": "Origem da Informação",
             "description": "Fonte do dado correspondente a cada linha do arquivo"
           }
+        ],
+        "missingValues":[
+          "NA",
+          "" 
         ]
+     },
+      "dialect": {
+      "delimiter": ","
       }
     }
   ],
@@ -143,38 +161,8 @@
     "coronavirus"
   ],
   "name": "casos-confirmados-covid-19",
-  "title": "casos confirmados por COVID-19",
-  "homepage": "http://www.transparencia.dadosabertos.mg.gov.br/dataset/casos-confirmados-coronavirus",
-  "update":"true",
-  "commit":"",
-  "sources":[
-  {
-  "name": "Boletim Epidemiológico Coronavírus",
-  "path": "http://coronavirus.saude.mg.gov.br/boletim-acesso-rapido"
-  },
-  {"name": "Painel de Monitoramento Informe Epidemiológico Coronavírus",
-  "path": "http://coronavirus.saude.mg.gov.br/painel-de-monitoramento"
-  }
-  ],  
-  "contributors": [
-  {
-  "title": "Diretoria de Transparência Ativa",
-  "path": "http://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade",
-  "role": "publisher",
-  "email": "transparencia@cge.mg.gov.br"
-  },
-  {
-  "title": "COES Coronavírus Secretaria de Estado de Saúde de Minas Gerais",
-  "path": "http://coronavirus.saude.mg.gov.br/",
-  "role": "author",
-  "email": "coes.corona@saude.mg.gov.br"
-  }
-  ],
-  "licenses": [
-  {
-  "name": "CC-BY-SA-4.0",
-  "title": "Creative Commons Attribution Share-Alike 4.0",
-  "path": "https://creativecommons.org/licenses/by-sa/4.0/"
-  }
- ]
+  "title": "Casos confirmados por COVID-19",
+  "description": "Contém dados sobre os casos confirmados de COVID-19 em Minas Gerais.",
+  "private": "false",
+  "state": "active"
 }
