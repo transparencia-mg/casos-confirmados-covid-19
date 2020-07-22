@@ -145,7 +145,7 @@
         ]
      },
       "dialect": {
-      "delimiter": ","
+      "delimiter": ";"
       }
     }
   ],
