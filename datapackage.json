@@ -12,13 +12,6 @@
       "encoding": "utf-8",
       "schema": {
         "fields": [
-           {
-            "name": "",
-            "type": "integer",
-            "format": "default",
-            "title": "",
-            "description": "contador"
-          },
           {
             "name": "URS",
             "type": "string",
