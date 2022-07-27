@@ -168,5 +168,21 @@
   "title": "Casos confirmados por COVID-19",
   "description": "Contém dados sobre os casos confirmados de COVID-19 em Minas Gerais.",
   "private": "false",
-  "state": "active"
+  "state": "active",
+  "version": "0.1.0",
+  "Frequência de atualização":"diária",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Diretoria Central de Transparência Ativa",
+      "role": "maintainer",
+      "email": "transparencia@cge.mg.gov.br"
+    }
+  ]
 }
